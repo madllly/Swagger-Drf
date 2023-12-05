@@ -19,12 +19,12 @@ class CarCreate(generics.CreateAPIView):
     serializer_class = CarSerializer
 
 
-class CarDelete(generics.RetrieveDestroyAPIView):
+class CarDelete(generics.DestroyAPIView):
     queryset = Car.objects.all()
     serializer_class = CarSerializer
 
 
-class CarUpdate(generics.RetrieveUpdateAPIView):
+class CarUpdate(generics.UpdateAPIView):
     queryset = Car.objects.all()
     serializer_class = CarSerializer
 
@@ -46,12 +46,12 @@ class ClientCreate(generics.CreateAPIView):
     serializer_class = ClientSerializer
 
 
-class ClientDelete(generics.RetrieveDestroyAPIView):
+class ClientDelete(generics.DestroyAPIView):
     queryset = Client.objects.all()
     serializer_class = ClientSerializer
 
 
-class ClientUpdate(generics.RetrieveUpdateAPIView):
+class ClientUpdate(generics.UpdateAPIView):
     queryset = Client.objects.all()
     serializer_class = ClientSerializer
 
@@ -73,12 +73,12 @@ class WorkerCreate(generics.CreateAPIView):
     serializer_class = WorkerSerializer
 
 
-class WorkerDelete(generics.RetrieveDestroyAPIView):
+class WorkerDelete(generics.DestroyAPIView):
     queryset = Worker.objects.all()
     serializer_class = WorkerSerializer
 
 
-class WorkerUpdate(generics.RetrieveUpdateAPIView):
+class WorkerUpdate(generics.UpdateAPIView):
     queryset = Worker.objects.all()
     serializer_class = WorkerSerializer
 
@@ -100,12 +100,12 @@ class ListOfWorkCreate(generics.CreateAPIView):
     serializer_class = ListOfWorkSerializer
 
 
-class ListOfWorkDelete(generics.RetrieveDestroyAPIView):
+class ListOfWorkDelete(generics.DestroyAPIView):
     queryset = ListOfWork.objects.all()
     serializer_class = ListOfWorkSerializer
 
 
-class ListOfWorkUpdate(generics.RetrieveUpdateAPIView):
+class ListOfWorkUpdate(generics.UpdateAPIView):
     queryset = ListOfWork.objects.all()
     serializer_class = ListOfWorkSerializer
 
@@ -128,11 +128,11 @@ class OrderListCreate(generics.CreateAPIView):
     serializer_class = OrderListSerializer
 
 
-class OrderListDelete(generics.RetrieveDestroyAPIView):
+class OrderListDelete(generics.DestroyAPIView):
     queryset = OrderList.objects.all()
     serializer_class = OrderListSerializer
 
 
-class OrderListUpdate(generics.RetrieveUpdateAPIView):
+class OrderListUpdate(generics.UpdateAPIView):
     queryset = OrderList.objects.all()
     serializer_class = OrderListSerializer
